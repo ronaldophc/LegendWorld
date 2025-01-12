@@ -1,0 +1,7 @@
+name: LegendWorld
+main: com.ronaldophc.LegendWorld
+version: 0.1-SNAPSHOT
+author: Ronaldo
+description: A plugin for generate the World
+api-version: 1.8.8
+load: STARTUP
