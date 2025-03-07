@@ -5,3 +5,10 @@ author: Ronaldo
 description: A plugin for generate the World
 api-version: 1.8.8
 load: STARTUP
+commands:
+  bo2:
+    description: Command to generate the bo2 structure
+    usage: /bo2 <file>
+  bo3:
+    description: Command to generate the bo3 structure
+    usage: /bo3 <file>

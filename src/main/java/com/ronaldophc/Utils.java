@@ -1,6 +1,7 @@
 package com.ronaldophc;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Chunk;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
@@ -64,6 +65,28 @@ public class Utils {
                 entity.remove();
             }
         }
+    }
+
+    public static String bold = "§l";
+    public static String color1 = "§b";
+    public static String color2 = "§f";
+    public static String color3 = "§e";
+    public static String admin = ChatColor.LIGHT_PURPLE.toString();
+    public static String success = "§a";
+    public static String error = "§c";
+    public static String errorServer = "§4";
+    public static String title = "§b§lLegendWorld";
+    public static String noPermission = error + "Voce não tem permissao para executar este comando.";
+    public static String noConsole = error + "Não pode executar este comando no console.";
+    public static String noPlayer = error + "Jogador não encontrado.";
+
+
+    public static String usage(String usage) {
+        return Utils.bold + Utils.color1 + "Use " + Utils.bold + Utils.color2 + usage;
+    }
+
+    public static void errorCommand(String comando, Exception e) {
+        LegendWorld.logger.info("Erro ao usar o comando " + comando + ": " + e.getMessage());
     }
 
 }
